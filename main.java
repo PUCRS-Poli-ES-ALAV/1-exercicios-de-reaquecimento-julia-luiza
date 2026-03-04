@@ -9,6 +9,9 @@ public static void main (String args[]){
 
     String c = "casa";
     System.out.println(inv(c));
+
+    int n = 4; 
+    System.out.println(fatorial(n));
 }
 
 // Exercício 1 
@@ -30,3 +33,14 @@ public static String inv (String m){
         }
     return m.charAt(m.length() - 1) + inv(m.substring(0, m.length() - 1));
 }
+
+// Exercício 5
+public static int fatorial (int n){
+    if ( n == 0 || n == 1) { 
+        return 0;
+    } else {
+        
+        return n * fatorial(n - 1);
+    }
+}
+
